@@ -179,8 +179,8 @@ class ANALYSIS:
             #self.construct_plot(Nj, "JetMass_Nj2_c"    ,selection          ,"",tag  ,50, 0 ,60,"Mj_c, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "JetMass_Nj2_a"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_a, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "JetMass_Nj2_c"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_c, Nj=2"                        ,"Events" ,logy,CR);             
-            self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_a, using new H4q tagger,Nj=2"                        ,"Events" ,logy,CR);             
-            self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_c, using new H4q tagger,Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "MET_pt/Pt_Nj2_a_new"    ,selection          ,"",tag  ,20, 0 ,1,"MET/PT_Higgs, using new H4q tagger order,Nj=2"                        ,"Events" ,logy,CR);  
             #self.construct_plot(Nj, "MET_pt/(Pt_Nj2_a_new+Pt_Nj2_c_new)**0.5"    ,selection          ,"",tag  ,20, 0 ,10,"MET Significance"                        ,"Events" ,logy,CR);  
                                  
