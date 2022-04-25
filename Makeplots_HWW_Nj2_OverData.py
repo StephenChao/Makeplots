@@ -442,7 +442,6 @@ class ANALYSIS:
             for h in [           h_Signal1_H4q, h_Signal1_H3q, h_Signal1_H2q, h_Signal1_W, h_Signal1_Hlqq, h_Signal1_Hlq, h_Signal1_g,   h_Signal1_Rest]: h_TotalS1.Add(h);
             for h in [h_TotalS1, h_Signal1_H4q, h_Signal1_H3q, h_Signal1_H2q, h_Signal1_W, h_Signal1_Hlqq, h_Signal1_Hlq, h_Signal1_g,   h_Signal1_Rest]: h=UnderOverFlow1D(h);
 
-
         hstack_TotalMC.Add(h_Rest);hstack_TotalMC.Add(h_WJets);hstack_TotalMC.Add(h_STop);hstack_TotalMC.Add(h_TTbar);hstack_TotalMC.Add(h_QCD);
         h_TotalMC = TH1D("h_TotalMC","h_TotalMC"+";%s;%s"%(xtitle,ytitle),nbin,min,max); h_TotalMC.Sumw2(); h_TotalMC.Add(h_QCD);  h_TotalMC.Add(h_TTbar); h_TotalMC.Add(h_STop); h_TotalMC.Add(h_WJets);h_TotalMC.Add(h_Rest);
         h_data.SetBinErrorOption(TH1D.kPoisson);
@@ -731,7 +730,8 @@ class ANALYSIS:
             theLeg = TLegend(0.68, 0.65, 0.9, 0.92, "", "NDC");theLeg.SetName("theLegend"); theLeg.SetBorderSize(0); theLeg.SetLineColor(0); theLeg.SetFillColor(0);theLeg.SetFillStyle(0); theLeg.SetLineWidth(0); theLeg.SetLineStyle(0); theLeg.SetTextFont(42);theLeg.SetTextSize(.04);
             theLeg.SetFillColor(0);theLeg.SetBorderSize(0);theLeg.SetLineColor(0);theLeg.SetLineWidth(0);theLeg.SetLineStyle(0);theLeg.SetTextFont(42);#theLeg.SetNColumns(2);
             # theLeg.AddEntry(h_TotalMC,"Total BKG shape","L");
-            theLeg.AddEntry(h_Signal1,"qqqq,qqlnu","L");
+            #theLeg.AddEntry(h_Signal1,"qqqq,qqlnu","L");
+            theLeg.AddEntry(h_Signal1,"qqlnu only","L");
             #theLeg.AddEntry(h_TotalS1,"Signal as sum of comp.","L");
             print "Non-Closure of the sum of components:",(h_TotalS1.Integral()-h_Signal1.Integral())/h_Signal1.Integral();
             theLeg.AddEntry(h_Signal1_H4q ,"H^{4q}  %.0f"%(  h_Signal1_H4q.Integral()/h_TotalS1.Integral()*100)+"%" ,"L");
