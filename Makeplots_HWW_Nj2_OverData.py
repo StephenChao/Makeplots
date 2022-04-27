@@ -179,8 +179,8 @@ class ANALYSIS:
             #self.construct_plot(Nj, "JetMass_Nj2_c"    ,selection          ,"",tag  ,50, 0 ,60,"Mj_c, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "JetMass_Nj2_a"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_a, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "JetMass_Nj2_c"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_c, Nj=2"                        ,"Events" ,logy,CR);             
-            self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,Max mass>40, Nj=2"                        ,"Events" ,logy,CR);             
-            self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,Max mass>40, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,LeadingPt>450,Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,LeadingPt>450,Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "MET_pt/Pt_Nj2_a_new"    ,selection          ,"",tag  ,20, 0 ,1,"MET/PT_Higgs, using new H4q tagger order,Nj=2"                        ,"Events" ,logy,CR);  
             #self.construct_plot(Nj, "MET_pt/(Pt_Nj2_a_new+Pt_Nj2_c_new)**0.5"    ,selection          ,"",tag  ,20, 0 ,10,"MET Significance"                        ,"Events" ,logy,CR);  
                                  
@@ -344,7 +344,7 @@ class ANALYSIS:
         #if options.y=="17"      :path="/eos/user/y/yusong/qilong/NTuple_Output/17/all/Tree/mu";  lumi= 41.5;
         #if options.y=="18"      :path="/eos/user/y/yuzhe/HWW/frame/Custom/Tree/NoSelection/";  lumi=59.81;
         #if options.y=="18"      :path="/eos/user/y/yuzhe/HWW/frame/Custom/Tree/NjAbove2/";  lumi=59.81;
-        if options.y=="18"      :path="/eos/user/y/yuzhe/HWW/frame/Custom/Tree/MassAbove40/";  lumi=59.81;
+        if options.y=="18"      :path="/eos/user/y/yuzhe/HWW/frame/Custom/Tree/PtAbove/";  lumi=59.81;
         #if options.y=="16,17,18":path="/eos/cms/store/user/.........;  lumi=138;
 
         #====== DEFINE CANVAS ==========================
@@ -368,7 +368,7 @@ class ANALYSIS:
         #t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "NewTagger_Nj2_2q.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
         #t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "NewTagger_Nj2_2q_Mode.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
         #t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "2q_NoSelection.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
-        t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "2q_AddMass.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
+        t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "2q_AddPt.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
         
         # t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+"Signal/HWW2q_PS.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
         t_Signal2 = TChain("NewTree"); t_Signal2.Add(path + "NewTagger_Nj2_4q.root"); h_Signal2 = TH1D("h_Signal2", "h_Signal2" + ";%s;%s" % (xtitle, ytitle), nbin, min, max); h_Signal2.Sumw2();
