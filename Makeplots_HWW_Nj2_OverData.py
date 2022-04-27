@@ -179,13 +179,13 @@ class ANALYSIS:
             #self.construct_plot(Nj, "JetMass_Nj2_c"    ,selection          ,"",tag  ,50, 0 ,60,"Mj_c, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "JetMass_Nj2_a"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_a, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "JetMass_Nj2_c"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_c, Nj=2"                        ,"Events" ,logy,CR);             
-            self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,No Selection, Nj=2"                        ,"Events" ,logy,CR);             
-            self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,No Selection, Nj=2"                        ,"Events" ,logy,CR);             
-            #self.construct_plot(Nj, "MET_pt/Pt_Nj2_a_new"    ,selection          ,"",tag  ,20, 0 ,1,"MET/PT_Higgs, using new H4q tagger order,Nj=2"                        ,"Events" ,logy,CR);  
-            #self.construct_plot(Nj, "MET_pt/(Pt_Nj2_a_new+Pt_Nj2_c_new)**0.5"    ,selection          ,"",tag  ,20, 0 ,10,"MET Significance"                        ,"Events" ,logy,CR);  
+            #self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,No Selection, Nj=2"                        ,"Events" ,logy,CR);             
+            #self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,No Selection, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "MET_pt/Pt_Nj2_a_new"    ,selection          ,"",tag  ,20, 0 ,1,"MET/PT_Higgs, using new H4q tagger order,No Selection,Nj=2"                        ,"Events" ,logy,CR);  
+            self.construct_plot(Nj, "MET_pt/(Pt_Nj2_a_new+Pt_Nj2_c_new)**0.5"    ,selection          ,"",tag  ,20, 0 ,10,"MET Significance, No Selection"                        ,"Events" ,logy,CR);  
                                  
-            #self.construct_plot(Nj, "MET_pt"    ,selection          ,"",tag  ,20, 0 ,800,"MET, Nj=2"                        ,"Events" ,logy,CR);             
-            #self.construct_plot(Nj, "Pt_Nj2_a_new"    ,selection          ,"",tag  ,50,100,2200,"P_T for ja,using new H4q tagger, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "MET_pt"    ,selection          ,"",tag  ,20, 0 ,800,"MET, No Selection, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "Pt_Nj2_a_new"    ,selection          ,"",tag  ,50,100,2200,"P_T for ja,using new H4q tagger, No Selection, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "Pt_Nj2_c_new"    ,selection          ,"",tag  ,50, 100 ,2200,"P_T for jc,using new H4q tagger, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "Pt_Nj2_a"    ,selection          ,"",tag  ,50,100,2200,"P_T for ja, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "Pt_Nj2_c"    ,selection          ,"",tag  ,50, 100 ,2200,"P_T for jc, Nj=2"                        ,"Events" ,logy,CR);             
@@ -215,7 +215,7 @@ class ANALYSIS:
             # self.construct_plot(Nj,"deepW_Nj2_c", selection                    ,"",tag  ,50,  -0.05,  1.55   ,"deep-W_c, Nj=2, deepWH_a=1"           ,"Events" ,logy,CR);
             # self.construct_plot(Nj,"deepH_Nj2_a", selection                    ,"",tag  ,20,  -0.05 , 1.05    ,"deep-H_a, Nj=2"           ,"Events" ,logy,CR);
             # self.construct_plot(Nj,"deepH_Nj2_c", selection                    ,"",tag  ,20,  -0.05,  1.05   ,"deep-H_c, Nj=2"           ,"Events" ,logy,CR);
-            #self.construct_plot(Nj,"deepH_Nj2_a_new", selection                    ,"",tag  ,20,  -0.05 , 1.05    ,"New H4q tagger_a, Nj=2"           ,"Events" ,logy,CR);
+            self.construct_plot(Nj,"deepH_Nj2_a_new", selection                    ,"",tag  ,20,  -0.05 , 1.05    ,"New H4q tagger_a, No Selection, Nj=2"           ,"Events" ,logy,CR);
             #self.construct_plot(Nj,"deepH_Nj2_c_new", selection                    ,"",tag  ,20,  -0.05,  1.05   ,"New H4q tagger_c, Nj=2"           ,"Events" ,logy,CR);
 
 
