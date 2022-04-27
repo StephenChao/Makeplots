@@ -179,6 +179,7 @@ class ANALYSIS:
             #self.construct_plot(Nj, "JetMass_Nj2_c"    ,selection          ,"",tag  ,50, 0 ,60,"Mj_c, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "JetMass_Nj2_a"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_a, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "JetMass_Nj2_c"    ,selection          ,"",tag  ,50, 0 ,250,"Mj_c, Nj=2"                        ,"Events" ,logy,CR);             
+<<<<<<< HEAD
             #self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,Nj=2"                        ,"Events" ,logy,CR);             
             self.construct_plot(Nj, "MET_pt/Pt_Nj2_a_new"    ,selection          ,"",tag  ,20, 0 ,1,"MET/PT_Higgs, add lep veto,Nj=2"                        ,"Events" ,logy,CR);  
@@ -186,6 +187,61 @@ class ANALYSIS:
                                  
             self.construct_plot(Nj, "MET_pt"    ,selection          ,"",tag  ,20, 0 ,800,"MET, add lep veto,Nj=2"                        ,"Events" ,logy,CR);             
             self.construct_plot(Nj, "Pt_Nj2_a_new"    ,selection          ,"",tag  ,50,100,2200,"P_T for ja,add lep veto, Nj=2"                        ,"Events" ,logy,CR);             
+=======
+<<<<<<< HEAD
+            #self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,LeadingPt>450,Nj=2"                        ,"Events" ,logy,CR);             
+            #self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,LeadingPt>450,Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "MET_pt/Pt_Nj2_a_new"    ,selection          ,"",tag  ,20, 0 ,1,"MET/PT_Higgs,Add Pt,Nj=2"                        ,"Events" ,logy,CR);  
+            self.construct_plot(Nj, "MET_pt/(Pt_Nj2_a_new+Pt_Nj2_c_new)**0.5"    ,selection          ,"",tag  ,20, 0 ,10,"MET Significance,Add Pt,Nj=2"                        ,"Events" ,logy,CR);  
+                                 
+            self.construct_plot(Nj, "MET_pt"    ,selection          ,"",tag  ,20, 0 ,800,"MET, Add pt, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "Pt_Nj2_a_new"    ,selection          ,"",tag  ,50,100,2200,"P_T for ja,using new H4q tagger,Add pt,Nj=2"                        ,"Events" ,logy,CR);             
+=======
+<<<<<<< HEAD
+            #self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,LeadingPt>450,Nj=2"                        ,"Events" ,logy,CR);             
+=======
+<<<<<<< HEAD
+            #self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,Max mass>40, Nj=2"                        ,"Events" ,logy,CR);             
+            #self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,Max mass>40, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "MET_pt/Pt_Nj2_a_new"    ,selection          ,"",tag  ,20, 0 ,1,"MET/PT_Higgs,Add Mass,Nj=2"                        ,"Events" ,logy,CR);  
+            self.construct_plot(Nj, "MET_pt/(Pt_Nj2_a_new+Pt_Nj2_c_new)**0.5"    ,selection          ,"",tag  ,20, 0 ,10,"MET Significance,Add Mass,Nj=2"                        ,"Events" ,logy,CR);  
+                                 
+            self.construct_plot(Nj, "MET_pt"    ,selection          ,"",tag  ,20, 0 ,800,"MET, Add mass,Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "Pt_Nj2_a_new"    ,selection          ,"",tag  ,50,100,2200,"P_T for ja,Add mass, Nj=2"                        ,"Events" ,logy,CR);             
+=======
+<<<<<<< HEAD
+            #self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,Max mass>40, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,Max mass>40, Nj=2"                        ,"Events" ,logy,CR);             
+=======
+<<<<<<< HEAD
+            #self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,Nj8>=2, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,Nj8>=2, Nj=2"                        ,"Events" ,logy,CR);             
+=======
+<<<<<<< HEAD
+            #self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,No Selection, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,No Selection, Nj=2"                        ,"Events" ,logy,CR);             
+=======
+<<<<<<< HEAD
+            #self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,No Selection, Nj=2"                        ,"Events" ,logy,CR);             
+            #self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,No Selection, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "MET_pt/Pt_Nj2_a_new"    ,selection          ,"",tag  ,20, 0 ,1,"MET/PT_Higgs, using new H4q tagger order,No Selection,Nj=2"                        ,"Events" ,logy,CR);  
+            self.construct_plot(Nj, "MET_pt/(Pt_Nj2_a_new+Pt_Nj2_c_new)**0.5"    ,selection          ,"",tag  ,20, 0 ,10,"MET Significance, No Selection"                        ,"Events" ,logy,CR);  
+=======
+            self.construct_plot(Nj, "JetMass_Nj2_a_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_a, using new H4q tagger,LeadingPt>450,Nj=2"                        ,"Events" ,logy,CR);             
+>>>>>>> 3ae8c9ce3255143f4951f58247fa466452959aad
+            self.construct_plot(Nj, "JetMass_Nj2_c_new"    ,selection          ,"",tag  ,35, 0 ,250,"Mj_c, using new H4q tagger,LeadingPt>450,Nj=2"                        ,"Events" ,logy,CR);             
+>>>>>>> 98a3db3363812bb092fd459db9e348a71036850f
+>>>>>>> 65479eebc8cd859b277c25ab50691e6fec8b620c
+>>>>>>> a7f0f5a1b8541b894993da694024c8977c5cdd05
+            #self.construct_plot(Nj, "MET_pt/Pt_Nj2_a_new"    ,selection          ,"",tag  ,20, 0 ,1,"MET/PT_Higgs, using new H4q tagger order,Nj=2"                        ,"Events" ,logy,CR);  
+            #self.construct_plot(Nj, "MET_pt/(Pt_Nj2_a_new+Pt_Nj2_c_new)**0.5"    ,selection          ,"",tag  ,20, 0 ,10,"MET Significance"                        ,"Events" ,logy,CR);  
+>>>>>>> bb95974f7e7e17198c3ee4c0db033173a0408aab
+                                 
+            self.construct_plot(Nj, "MET_pt"    ,selection          ,"",tag  ,20, 0 ,800,"MET, No Selection, Nj=2"                        ,"Events" ,logy,CR);             
+            self.construct_plot(Nj, "Pt_Nj2_a_new"    ,selection          ,"",tag  ,50,100,2200,"P_T for ja,using new H4q tagger, No Selection, Nj=2"                        ,"Events" ,logy,CR);             
+>>>>>>> db3852814749d9b7296b026f6c18562c6e752aba
+>>>>>>> 4c1be592e44866fad96ed38e9ddbc86822977548
+>>>>>>> 9468590bc7d000d3cd6f2c5929ce9f575491f447
             #self.construct_plot(Nj, "Pt_Nj2_c_new"    ,selection          ,"",tag  ,50, 100 ,2200,"P_T for jc,using new H4q tagger, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "Pt_Nj2_a"    ,selection          ,"",tag  ,50,100,2200,"P_T for ja, Nj=2"                        ,"Events" ,logy,CR);             
             #self.construct_plot(Nj, "Pt_Nj2_c"    ,selection          ,"",tag  ,50, 100 ,2200,"P_T for jc, Nj=2"                        ,"Events" ,logy,CR);             
@@ -215,7 +271,7 @@ class ANALYSIS:
             # self.construct_plot(Nj,"deepW_Nj2_c", selection                    ,"",tag  ,50,  -0.05,  1.55   ,"deep-W_c, Nj=2, deepWH_a=1"           ,"Events" ,logy,CR);
             # self.construct_plot(Nj,"deepH_Nj2_a", selection                    ,"",tag  ,20,  -0.05 , 1.05    ,"deep-H_a, Nj=2"           ,"Events" ,logy,CR);
             # self.construct_plot(Nj,"deepH_Nj2_c", selection                    ,"",tag  ,20,  -0.05,  1.05   ,"deep-H_c, Nj=2"           ,"Events" ,logy,CR);
-            #self.construct_plot(Nj,"deepH_Nj2_a_new", selection                    ,"",tag  ,20,  -0.05 , 1.05    ,"New H4q tagger_a, Nj=2"           ,"Events" ,logy,CR);
+            self.construct_plot(Nj,"deepH_Nj2_a_new", selection                    ,"",tag  ,20,  -0.05 , 1.05    ,"New H4q tagger_a, No Selection, Nj=2"           ,"Events" ,logy,CR);
             #self.construct_plot(Nj,"deepH_Nj2_c_new", selection                    ,"",tag  ,20,  -0.05,  1.05   ,"New H4q tagger_c, Nj=2"           ,"Events" ,logy,CR);
 
 
@@ -342,7 +398,9 @@ class ANALYSIS:
         #----------------- paths to root files -------------------
         #if options.y=="16"      :path="/eos/cms/store/user/.........;  lumi=36.3;
         #if options.y=="17"      :path="/eos/user/y/yusong/qilong/NTuple_Output/17/all/Tree/mu";  lumi= 41.5;
-        if options.y=="18"      :path="/eos/user/y/yuzhe/HWW/frame/Custom/Tree/Nj2/";  lumi=59.81;
+        #if options.y=="18"      :path="/eos/user/y/yuzhe/HWW/frame/Custom/Tree/NoSelection/";  lumi=59.81;
+        #if options.y=="18"      :path="/eos/user/y/yuzhe/HWW/frame/Custom/Tree/NjAbove2/";  lumi=59.81;
+        if options.y=="18"      :path="/eos/user/y/yuzhe/HWW/frame/Custom/Tree/PtAbove/";  lumi=59.81;
         #if options.y=="16,17,18":path="/eos/cms/store/user/.........;  lumi=138;
 
         #====== DEFINE CANVAS ==========================
@@ -364,8 +422,10 @@ class ANALYSIS:
         h_data    = TH1D("h_data"  ,"h_DATA"  +";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_data.Sumw2();  c_data=h_data.Clone("c_data");
         # t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "NewTagger_Nj2_2q.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
         #t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "NewTagger_Nj2_2q.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
-        t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "NewTagger_Nj2_2q_Mode.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
-
+        #t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "NewTagger_Nj2_2q_Mode.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
+        #t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "2q_NoSelection.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
+        t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+ "2q_AddPt.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
+        
         # t_Signal1 = TChain("NewTree");  t_Signal1.Add(path+"Signal/HWW2q_PS.root");  h_Signal1=TH1D("h_Signal1","h_Signal1"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal1.Sumw2();
         t_Signal2 = TChain("NewTree"); t_Signal2.Add(path + "NewTagger_Nj2_4q.root"); h_Signal2 = TH1D("h_Signal2", "h_Signal2" + ";%s;%s" % (xtitle, ytitle), nbin, min, max); h_Signal2.Sumw2();
         #t_Signal3 = TChain("PKUTree");  t_Signal3.Add(path+"_out_M2000-R0-5.root" );h_Signal3=TH1D("h_Signal3","h_Signal3"+";%s;%s"%(xtitle,ytitle),nbin,min,max);  h_Signal3.Sumw2();
@@ -422,14 +482,14 @@ class ANALYSIS:
             # Rlq =" && (( Rlq_max  ==1 && Wa_MO_AK8==1) || ( Rlq_min ==1 && Wa_MO_AK8==3) )";
             # g   =" && (( gKK_g_max==1 && Wa_MO_AK8==1) || (gKK_g_min==1 && Wa_MO_AK8==3) )";
             # Rest=" && (( u_max    ==1 && Wa_MO_AK8==1) || (   u_min ==1 && Wa_MO_AK8==3) )";
-            H4q =" &&  (AK8_Mode_Nj2_a_new==4)";
-            H3q =" && (AK8_Mode_Nj2_a_new==5)";
-            H2q =" && (AK8_Mode_Nj2_a_new==6)";
-            W   =" && (AK8_Mode_Nj2_a_new==7)";
-            Hlqq =" && (AK8_Mode_Nj2_a_new==8)";
-            Hlq =" && (AK8_Mode_Nj2_a_new==9)";
-            g   =" && (AK8_Mode_Nj2_a_new==3)";
-            Rest=" && (AK8_Mode_Nj2_a_new==-99)";
+            H4q =" &&  (AK8_Mode_Nj2_c_new==4)";
+            H3q =" && (AK8_Mode_Nj2_c_new==5)";
+            H2q =" && (AK8_Mode_Nj2_c_new==6)";
+            W   =" && (AK8_Mode_Nj2_c_new==7)";
+            Hlqq =" && (AK8_Mode_Nj2_c_new==8)";
+            Hlq =" && (AK8_Mode_Nj2_c_new==9)";
+            g   =" && (AK8_Mode_Nj2_c_new==3)";
+            Rest=" && (AK8_Mode_Nj2_c_new==-99)";
             eval("t_Signal1").Draw("(%s) >> %s"%(variable,"h_Signal1_H4q") ,"(%s*%s)*(%s)"%(weight,self.Signal_Scale1,cut+H4q ) );
             eval("t_Signal1").Draw("(%s) >> %s"%(variable,"h_Signal1_H3q") ,"(%s*%s)*(%s)"%(weight,self.Signal_Scale1,cut+H3q ) );
             eval("t_Signal1").Draw("(%s) >> %s"%(variable,"h_Signal1_H2q") ,"(%s*%s)*(%s)"%(weight,self.Signal_Scale1,cut+H2q ) );
